@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="container">
+  <div class="skew-bg"></div>
+  <div class="login">
+    <h1>Login</h1>
+    <form id="login">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="Enter username" required>
+      <label for="password">Password</label>
+      <div class="password-field">
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+        <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+          <i class="fa fa-eye"></i>
+        </span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <form id="userForm" class="hide">
+      <input type="text" name="userinfo" value="" id="userinfo">
+      <input type="submit" id="button" value="Submit">
+    </form>
+    <div id="message"></div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/script.js"></script>
+  
+</body>
+</html>
